@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UNIV-ASSIST - Chat</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="sidebar-root"></div>
+  <main class="page-content">
+    <section id="chat-page" class="page active">
+      <header class="page-header"><h1>Chat Assistant</h1></header>
+      <div class="chat-card">
+        <div class="chat-title">Chat</div>
+        <div class="chat-messages" id="chatArea"></div>
+        <div class="chat-input-row">
+          <input type="text" id="chatInput" placeholder="Ask Univ-Assist..." />
+          <button id="sendBtn">Send</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="components/sidebar.html" type="text/html" id="sidebar-template"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Study 10 Hours",
+    "target_minutes": 600,
+    "progress_minutes": 0
+  },
+  {
+    "id": 2,
+    "title": "Finish E Tasks",
+    "target_minutes": 120,
+    "progress_minutes": 0
+  }
+]

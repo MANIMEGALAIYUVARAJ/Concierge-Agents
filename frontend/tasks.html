@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UNIV-ASSIST - Tasks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="sidebar-root"></div>
+  <main class="page-content">
+    <section id="tasks-page" class="page active">
+      <header class="page-header"><h1>Tasks</h1></header>
+      <div class="card">
+        <h3>Add Task</h3>
+        <input id="taskTitle" placeholder="Task title" />
+        <button id="addTaskBtn">Add</button>
+      </div>
+      <div class="card">
+        <h3>Your Tasks</h3>
+        <ul id="tasksList" class="task-list"><li>No tasks</li></ul>
+      </div>
+    </section>
+  </main>
+  <script src="components/sidebar.html" type="text/html" id="sidebar-template"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "text": "Your exam is 2 days away",
+    "important": true,
+    "time": "2025-12-01T10:58:52.864494"
+  },
+  {
+    "id": 2,
+    "text": "You studied for 3 hours today",
+    "important": false,
+    "time": "2025-12-01T10:58:52.864494"
+  },
+  {
+    "id": 3,
+    "text": "Practice guitar is due in 6 hours",
+    "important": false,
+    "time": "2025-12-01T10:58:52.864494"
+  }
+]

@@ -1,0 +1,303 @@
+/* =========================
+   Univ-Assist — index.css
+   Final Polished Version
+   ========================= */
+
+/* Theme variables */
+:root{
+  --blue: #1e3a8a;
+  --muted: #f5f7ff;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted-text: #6b7280;
+  --shadow: rgba(16,24,40,0.06);
+}
+
+/* Reset / Base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body,#root { height: 100%; }
+body {
+  font-family: Inter, system-ui, "Segoe UI", Roboto, Arial;
+  background: var(--muted);
+  color: var(--text);
+}
+
+/* Layout */
+.app-root {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* -------------------------
+   Sidebar
+---------------------------- */
+.sidebar {
+  width: 240px;
+  background: var(--blue);
+  color: #fff;
+  padding: 28px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.sidebar h1 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  transition: 0.16s ease;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: rgba(255,255,255,0.12);
+  transform: translateX(3px);
+}
+
+/* -------------------------
+   Content Area
+---------------------------- */
+.content {
+  margin-left: 260px;
+  padding: 28px;
+  flex: 1;
+}
+
+.page-header h1 {
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+
+.page-header p {
+  color: var(--muted-text);
+  margin-bottom: 20px;
+}
+
+/* Rows & Cards */
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.card {
+  background: var(--card);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 6px 25px var(--shadow);
+}
+
+.stat-card {
+  width: 22%;
+  min-width: 160px;
+}
+
+.stat-value {
+  font-size: 26px;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.card-large {
+  width: 48%;
+  min-width: 300px;
+}
+
+/* -------------------------
+   Productivity Bars
+---------------------------- */
+.prod-bars {
+  display: flex;
+  align-items: flex-end;
+  height: 140px;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.prod-bar-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.prod-bars .bar {
+  width: 28px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #4f6ef7, #6d7df1);
+  transition: height 0.4s ease;
+}
+
+.prod-day-label {
+  font-size: 13px;
+  color: var(--muted-text);
+}
+
+/* -------------------------
+   Task List
+---------------------------- */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.task-list li {
+  padding: 8px 0;
+  border-bottom: 1px dashed #e5e7eb;
+  font-size: 15px;
+}
+
+/* -------------------------
+   Chat UI
+---------------------------- */
+.chat-card {
+  background: var(--card);
+  padding: 12px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 900px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 25px var(--shadow);
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  background: #eef2ff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  font-size: 14px;
+}
+
+.user-message {
+  background: #dbe4ff;
+  align-self: flex-end;
+}
+
+/* Chat Input */
+.chat-input {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.chat-input button {
+  padding: 10px 16px;
+  background: var(--blue);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Microphone Button */
+.mic-button {
+  background: #fff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(16,24,40,0.06);
+}
+
+/* -------------------------
+   ChatGPT Typing Indicator
+---------------------------- */
+.typing-indicator {
+  display: inline-flex;
+  gap: 6px;
+  padding: 8px 12px;
+  background: #eef1ff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.typing-dot {
+  width: 8px;
+  height: 8px;
+  background: #4f6ef7;
+  border-radius: 50%;
+  animation: typingBlink 1.3s infinite ease-in-out;
+}
+
+.typing-dot:nth-child(2){ animation-delay: 0.2s; }
+.typing-dot:nth-child(3){ animation-delay: 0.4s; }
+
+@keyframes typingBlink {
+  0%{ opacity: 0.2; transform: translateY(0); }
+  20%{ opacity: 1; transform: translateY(-3px); }
+  100%{ opacity: 0.2; transform: translateY(0); }
+}
+
+/* -------------------------
+   Scrollbar
+---------------------------- */
+.chat-messages::-webkit-scrollbar { width: 8px; }
+.chat-messages::-webkit-scrollbar-thumb {
+  background: rgba(79,110,247,0.3);
+  border-radius: 6px;
+}
+
+/* -------------------------
+   Study Plan Card Inner
+---------------------------- */
+.card .card {
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: none;
+  background: #f9faff;
+}
+
+/* -------------------------
+   Responsive
+---------------------------- */
+@media (max-width: 1100px) {
+  .card-large { width: 100%; }
+  .stat-card { width: 48%; }
+}
+
+@media (max-width: 900px) {
+  .sidebar { width: 100%; position: relative; }
+  .content { margin-left: 0; padding: 20px; }
+  .stat-card { width: 100%; }
+}

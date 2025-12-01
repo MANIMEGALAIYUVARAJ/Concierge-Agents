@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UNIV-ASSIST - Mood</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="sidebar-root"></div>
+  <main class="page-content">
+    <section id="mood-page" class="page active">
+      <header class="page-header"><h1>Mood Tracker</h1></header>
+      <div class="card">
+        <h3>How are you?</h3>
+        <div class="mood-buttons">
+          <button onclick="saveMood('Happy')">🙂 Happy</button>
+          <button onclick="saveMood('Okay')">😐 Okay</button>
+          <button onclick="saveMood('Sad')">😔 Sad</button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Mood History</h3>
+        <div id="moodHistory">No moods yet</div>
+      </div>
+    </section>
+  </main>
+  <script src="components/sidebar.html" type="text/html" id="sidebar-template"></script>
+  <script src="app.js"></script>
+</body>
+</html>
