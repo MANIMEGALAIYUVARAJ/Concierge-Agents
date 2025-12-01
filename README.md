@@ -1,4 +1,4 @@
-# 🎓 UNIV ASSIST – AI-Powered Concierge Assistant (Full-Stack Project)
+# 🎓 UNIV ASSIST – AI-Powered Concierge Assistant 
 
 This project is a full-stack AI-powered **Concierge Assistant** designed to **automate daily tasks and improve individual workflows**.  
 It combines a Python backend (Flask/FastAPI) with a React frontend to create a modern, intelligent productivity tool.
