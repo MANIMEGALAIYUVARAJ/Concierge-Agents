@@ -161,3 +161,8 @@ Detailed day-block views.
 UNIV ASSIST is a complete AI Concierge system built to automate a user’s daily workflow with the power of ADK and a full-stack architecture.  
 It demonstrates strong understanding of tool-calling, routing, memory, and multi-step planning — aligning perfectly with the capstone requirements.
 
+## 👥 Team Members
+
+# Mathan - mathandinesh04@gmail.com
+# kesavan - e22ec001@shanmugha.edu.in
+
